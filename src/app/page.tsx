@@ -34,7 +34,7 @@ export default function Home() {
         />
       </div>
       <div className="md:w-1/2 bg-[radial-gradient(circle,#6a4a3a_0%,#3c141d_50%,#0b1227_100%)]">
-        <div className="flex relative items-center justify-center gap-x-3 mt-36">
+        <div className="flex relative items-center justify-center gap-x-3 mt-48">
           <Image
             src="/assets/landing/hero-rhs-glow.png"
             alt="Hero Image"
