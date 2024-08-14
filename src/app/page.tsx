@@ -1,112 +1,131 @@
+"use client";
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <main className="flex min-h-screen">
+      <div className="md:w-1/2 bg-[linear-gradient(154.83deg,#EA382B_1.33%,#722554_64.73%,#311C60_97.82%)] flex flex-col justify-center items-center px-20">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/assets/landing/spring-landing.png"
+          alt="Hero Image"
+          width={125}
+          height={125}
+          className="absolute top-0 left-0"
+        />
+        <h1 className="text-[80px] leading-tight text-white font-dharma font-extrabold">
+          READY TO UNCOVER YOUR DIGITAL PERSONALITY IN THE WORLD OF WEB3.0?
+        </h1>
+        <div className="flex items-center justify-center gap-x-3 mt-10">
+          <button
+            onClick={() => {
+              window.location.href = "/quiz";
+            }}
+            className="flex font-switzer uppercase items-center gap-x-3 font-extrabold text-lg custom-btn text-white py-3.5 px-8 rounded-[10px] "
+          >
+            Let&apos;s Begin
+            <span>🚀</span>
+          </button>
+        </div>
+        <Image
+          src="/assets/landing/tube-landing.png"
+          alt="Hero Image"
+          width={200}
+          height={200}
+          className="absolute bottom-0 left-0"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="md:w-1/2 bg-[radial-gradient(circle,#6a4a3a_0%,#3c141d_50%,#0b1227_100%)]">
+        <div className="flex relative items-center justify-center gap-x-3 mt-36">
+          <Image
+            src="/assets/landing/hero-rhs-glow.png"
+            alt="Hero Image"
+            width={420}
+            height={420}
+            className="absolute top-0 right-0"
+          />
+          <Image
+            src="/assets/landing/top-left-person-1.png"
+            alt="Hero Image"
+            width={150}
+            height={150}
+            className="absolute top-0 left-36"
+          />
+          <Image
+            src="/assets/landing/top-left-person-2.png"
+            alt="Hero Image"
+            width={90}
+            height={90}
+            className="absolute top-36 left-28"
+          />
+          <Image
+            src="/assets/landing/bottom-left-person-1.png"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="absolute top-56 left-48 z-50"
+          />
+          <Image
+            src="/assets/landing/bottom-left-person-2.png"
+            alt="Hero Image"
+            width={80}
+            height={80}
+            className="absolute top-80 left-64"
+          />
+          <Image
+            src="/assets/landing/bottom-person-1.png"
+            alt="Hero Image"
+            width={110}
+            height={110}
+            className="absolute top-80 left-[330px]"
+          />
+          <Image
+            src="/assets/landing/center-person-1.png"
+            alt="Hero Image"
+            width={180}
+            height={180}
+            className="absolute top-20 left-[275px]"
+          />
+          <Image
+            src="/assets/landing/bottom-right-person-1.png"
+            alt="Hero Image"
+            width={105}
+            height={105}
+            className="absolute top-60 right-[217.5px]"
+          />
+          <Image
+            src="/assets/landing/top-right-person-1.png"
+            alt="Hero Image"
+            width={130}
+            height={130}
+            className="absolute top-0 right-52"
+          />
+          <Image
+            src="/assets/landing/top-right-person-2.png"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="absolute top-20 right-36"
+          />
+          <Image
+            src="/assets/landing/sphere-landing.png"
+            alt="Hero Image"
+            width={420}
+            height={420}
+          />
+        </div>
+        <Image
+          src="/assets/landing/tube-landing-2.png"
+          alt="Hero Image"
+          width={220}
+          height={220}
+          className="absolute top-0 right-0"
+        />
+        <Image
+          src="/assets/landing/tube-landing-3.png"
+          alt="Hero Image"
+          width={185}
+          height={185}
+          className="absolute bottom-0 right-0"
+        />
       </div>
     </main>
   );
