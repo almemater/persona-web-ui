@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-black min-h-screen overflow-y-hidden">
+    <main className="bg-black min-h-screen overflow-y-hidden overflow-x-hidden">
       <h1 className="text-white flex items-center gap-x-1.5 md:gap-x-5 justify-center text-center py-7 md:text-6xl text-3xl sm:text-4xl font-dharma">
         <Image
           src="/assets/quiz-screen/phone-img.png"
@@ -101,7 +101,7 @@ export default function Home() {
               onClick={() => {
                 window.location.href = "/completion";
               }}
-              className="custom-btn whitespace-pre uppercase font-switzer font-extrabold text-white"
+              className="custom-btn submit-btn whitespace-pre uppercase font-switzer font-extrabold text-white"
             >
               Submit 🌟
             </button>

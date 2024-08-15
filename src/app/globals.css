@@ -152,4 +152,8 @@
   .custom-btn {
     padding: 0.5rem 1rem;
   }
+
+  .submit-btn{
+    padding: 0.5rem 0.55rem;
+  }
 }
