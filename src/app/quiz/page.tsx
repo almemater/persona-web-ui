@@ -21,8 +21,8 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-black min-h-screen overflow-y-hidden overflow-x-hidden">
-      <h1 className="text-white flex items-center gap-x-1.5 md:gap-x-5 justify-center text-center py-7 md:text-6xl text-3xl sm:text-4xl font-dharma">
+    <main className="bg-black min-h-screen overflow-x-hidden relative">
+      <h1 className="text-white flex items-center gap-x-1.5 md:gap-x-5 justify-center text-center py-7 md:text-6xl text-3xl sm:text-4xl font-dharma px-4">
         <Image
           src="/assets/quiz-screen/phone-img.png"
           alt="Hero Image"
@@ -30,7 +30,7 @@ export default function Home() {
           height={60}
           className="-mt-4"
         />
-        UNLOCK YOUR WEB3.0 PERSONA
+        <span className="break-words">UNLOCK YOUR WEB3.0 PERSONA</span>
       </h1>
       <Image
         src="/assets/quiz-screen/spring-quiz-screen.png"
@@ -57,16 +57,16 @@ export default function Home() {
         src="/assets/quiz-screen/tube-quiz-rhs-2.png"
         alt="Quiz Page Image"
         className="absolute top-80 right-0"
-        width={300}
+        width={200}
         height={310}
       />
-      <div className="flex items-center justify-center gap-x-3 mt-3.5 md:mx-44 mx-7 pb-6">
+      <div className="flex items-center justify-center gap-x-3 mt-3.5 md:mx-auto mx-4 pb-6 max-w-4xl">
         <QuizCard
           question={quizData[currentQuestionIndex].question}
           options={quizData[currentQuestionIndex].options}
         />
       </div>
-      <div className="flex justify-between items-center lg:mx-52 mx-5 pb-44 mt-5">
+      <div className="flex justify-between items-center lg:mx-52 mx-5 mt-5">
         <button
           className="relative font-switzer whitespace-pre inline-flex font-extrabold items-center justify-center p-0.5 overflow-hidden text-sm text-white rounded-lg bg-gradient-to-br from-[#C5BDBD] via-[#333333] to-[#666666]"
           onClick={handleBack}
