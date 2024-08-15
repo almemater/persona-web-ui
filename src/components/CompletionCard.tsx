@@ -32,14 +32,14 @@ const CompletionCard: React.FC = () => {
         <Image
           src="/assets/completion-screen/shape3-lhs.png"
           alt="Quiz Page Image"
-          className="absolute top-[450px] left-16 z-50"
+          className="absolute top-[450px] left-16 z-50 hidden lg:block"
           width={137}
           height={131}
         />
         <Image
           src="/assets/completion-screen/shape1-rhs.png"
           alt="Quiz Page Image"
-          className="absolute top-24 right-20"
+          className="absolute top-24 right-20 hidden lg:block"
           width={150}
           height={150}
         />
@@ -53,11 +53,11 @@ const CompletionCard: React.FC = () => {
         <Image
           src="/assets/completion-screen/shape3-rhs.png"
           alt="Quiz Page Image"
-          className="absolute top-[445px] right-24 z-50"
+          className="absolute top-[445px] right-24 z-50 hidden lg:block"
           width={90}
           height={95}
         />
-        <div className="flex items-center justify-center mt-16">
+        <div className="flex items-center justify-center mt-7 md:mt-16">
           <div
             style={{
               background:
