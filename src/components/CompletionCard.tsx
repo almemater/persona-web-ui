@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CompletionCard: React.FC = () => {
   return (
-    <div className="relative lg:w-[1096px] lg:h-[693px] lg:px-14 px-10 py-7 rounded-3xl bg-[linear-gradient(154.83deg,#EA382B_1.33%,#722554_64.73%,#311C60_97.82%)] overflow-hidden">
+    <div className="relative lg:w-[1096px] lg:h-[693px] lg:px-14 px-6 py-5 rounded-3xl bg-[linear-gradient(154.83deg,#EA382B_1.33%,#722554_64.73%,#311C60_97.82%)] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{

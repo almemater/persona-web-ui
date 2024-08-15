@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-black min-h-screen overflow-y-hidden">
-      <h1 className="text-white flex items-center gap-x-5 justify-center text-center py-7 text-6xl font-dharma">
+      <h1 className="text-white flex items-center gap-x-1.5 md:gap-x-5 justify-center text-center py-7 md:text-6xl text-3xl sm:text-4xl font-dharma">
         <Image
           src="/assets/completion-screen/completed-photo-heading.png"
           alt="Hero Image"
